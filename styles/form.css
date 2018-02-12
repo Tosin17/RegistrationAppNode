@@ -1,0 +1,39 @@
+input.ng-invalid.ng-dirty {
+
+    border: 1px solid lightcoral;
+
+}
+
+textarea.ng-invalid.ng-dirty {
+
+    border: 1px solid lightcoral;
+
+}
+
+select.ng-invalid.ng-dirty {
+
+    border: 1px solid lightcoral;
+
+}
+
+input.ng-valid.ng-dirty {
+
+    border: 1px solid lightgreen;
+
+}
+
+textarea.ng-valid.ng-dirty {
+
+    border: 1px solid lightgreen;
+
+}
+
+select.ng-valid.ng-dirty {
+
+    border: 1px solid lightgreen;
+
+}
+
+.error-field{
+    color: lightcoral !important;
+}

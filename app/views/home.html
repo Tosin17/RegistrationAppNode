@@ -1,0 +1,40 @@
+ <h1 class="page-name">{{ pageName }}</h1>
+    <br><br>
+    <div class="register">
+        <form name="frm" novalidate>
+            <div class="form-group">
+                <input type="text" class="form-control" id="fname" name="firstname" ng-model="student.firstname" placeholder="First name" pattern="[A-Za-z]{1,}" required>
+                <small ng-show="frm.firstname.$dirty && frm.firstname.$error.required" class="error-field form-text text-muted">This field is required</small>
+                <small ng-show="frm.firstname.$dirty && frm.firstname.$error.pattern" class="error-field form-text text-muted">Your first name should have only letters</small>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="lastname" ng-model="student.lastname" placeholder="Last name" pattern="[a-zA-Z]{1,}">
+                <small ng-show="frm.lastname.$dirty && frm.lastname.$error.required" class="error-field form-text text-muted">This field is required</small>
+                <small ng-show="frm.lastname.$dirty && frm.lastname.$error.pattern" class="error-field form-text text-muted">Your last name should have only letters</small>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" ng-model="student.email" placeholder="Email">
+                <small ng-show="frm.email.$dirty && frm.email.$error.required" class="error-field form-text text-muted">This field is required</small>
+                <small ng-show="frm.email.$dirty && frm.email.$error.email" class="error-field form-text text-muted">Please enter a valid email</small>
+            </div>
+            <div class="form-group">
+                <select class="form-control" name="gender" ng-model="student.gender" required>
+                    <option value="">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <small ng-show="frm.gender.$dirty && frm.gender.$error.required" class="error-field form-text text-muted">This field is required</small>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Home address" name="address" minlength="3" maxlength="50" rows="5" ng-model="student.address" required></textarea>
+                <small ng-show="frm.address.$dirty && frm.address.$error.required" class="error-field form-text text-muted">This field is required</small>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="scores" ng-model="student.score" placeholder="Average score" required>
+                <small ng-show="frm.scores.$dirty && frm.scores.$error.required" class="error-field form-text text-muted">This field is required</small>
+            </div>
+            <div class="pull-right">
+                <button type="button" ng-disabled="frm.$invalid" class="btn btn-primary" ng-click="onSubmit()">Submit</button>
+            </div>
+        </form>
+    </div>

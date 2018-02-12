@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="studentsApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Angular 1 Practise Project</title>
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<ng-include src="'app/views/nav.html'"></ng-include>
+
+<!-- Page Content -->
+<div class="container" ng-cloak>
+    <div class="row">
+        <div class="col-lg-8 offset-2">
+            <div class="main">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/angular.js"></script>
+<script src="scripts/angular-route.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controllers/SubmitController.js"></script>
+<script src="app/controllers/StudentsController.js"></script>
+</body>
+
+</html>
+

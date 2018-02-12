@@ -1,0 +1,27 @@
+body{
+
+    background: #eee;
+
+}
+
+.main {
+
+    background: white;
+    margin-top: 55px;
+    padding: 50px;
+    min-height: 100vh;
+
+}
+
+
+.page-name{
+
+    font-size: 2rem;
+    font-weight: 300;;
+
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
