@@ -1,1 +1,1 @@
-A registration App for PPRC built on Mongo, Express, Angular and Node.
+A Registration App for PPRC built on Mongo, Express, Angular and Node.
