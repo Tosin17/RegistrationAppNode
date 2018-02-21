@@ -4,15 +4,20 @@
 
 
     app.config(function ($routeProvider) {
-        $routeProvider.when('/test',{
+        $routeProvider.when('/', {
 
             controller: 'SubmitController',
             templateUrl: 'app/views/home.html'
 
-        }).when('/',{
+        }).when('/students-list', {
 
             controller: 'StudentsController',
             templateUrl: 'app/views/students-list.html'
+
+        }).when('/students-list/:studentId', {
+
+            controller: 'StudentController',
+            templateUrl: 'app/views/student.html'
 
         })
         .otherwise({redirectTo: '/'})

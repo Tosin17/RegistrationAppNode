@@ -59,7 +59,7 @@ var students = [
 
     {
         id: 1,
-        first_name: '2000-12-02',
+        first_name: 'Jermaine',
         last_name:'John',
         email:'Chandler',
         gender:'Seattle',
@@ -76,7 +76,7 @@ var students = [
     },
     {
         id: 2,
-        first_name: '1965-01-25',
+        first_name: 'Jamil',
         last_name:'Zed',
         email:'Las Vegas',
         gender:'Seattle',
@@ -99,7 +99,7 @@ var students = [
     },
     {
         id: 3,
-        first_name: '1944-06-15',
+        first_name: 'Dharlsm',
         last_name:'Tina',
         email:'New York',
         gender:'Seattle',
@@ -116,7 +116,7 @@ var students = [
     },
     {
         id: 4,
-        first_name: '1995-03-28',
+        first_name: 'Sagat',
         last_name:'Dave',
         email:'Seattle',
         gender:'Seattle',
